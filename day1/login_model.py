@@ -1,4 +1,5 @@
 # Author:Alex Du
+#!/usr/bin/env python
 import  getpass
 user = input("please set username:")
 pwd = getpass.getpass("Please set your password:")
