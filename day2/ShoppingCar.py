@@ -21,7 +21,7 @@ if budget.isdigit():  # 判断如果是数字，则将其转成int类型
         if choose.isdigit():  # 判断输入是否是合法的数字代码，如果是转换成int类型，如果不是输入错误
             choose = int(choose)
             if 0 <= choose < len(product_list):
-            #  if choose < len(product_list) and choose >= 0: 操作可以简化成上面的，同样的效果
+            # if choose < len(product_list) and choose >= 0: 操作可以简化成上面的，同样的效果
                 # print(len(product_list))
 
                 choose_item = product_list[choose]

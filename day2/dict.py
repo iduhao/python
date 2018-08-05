@@ -17,7 +17,42 @@ info["student004"] = "赵老爷"
 # del info  # 删除字典
 # 删除key
 # del info["student004"]
-# info.pop("student003")
+# info.pop("student003")  删除指定key的值
 print(info)
 #  ================字典嵌套=======================================
+nba_start = {
+    "gsw": {
+        "PG": ["Stephen Curry"],
+        "SG": ["Klay Thompson"],
+        "SF": ["Kevin Durant"],
+        "PF": ["Draymond Green"],
+        "C": ["DeMarcus Cousins"]
+    },
+    "hou": {
+        "PG": ["James Harden"],
+        "SG": ["Chris Paul"],
+        "SF": ["Trevor Ariza"],
+        "PF": ["Clint Capela"],
+        "C": ["Qi Zhou"]
+    },
+    "cavs": {
+        "PG": ["J.R.Smith"],
+        "SG": ["Kyle Korver"],
+        "SF": ["LeBron James"],
+        "PF": ["Kevin Love"],
+        "C": ["Tristan Thompson"]
+    },
 
+}
+print(nba_start)
+nba_start["cavs"]["PF"][0] = "Jeff Green"  # 修改嵌套字典中的键值
+print(nba_start)
+print(nba_start.values())  # 直接打印字典中的value
+print(nba_start.keys())  # 打印字典中的key
+nba_start.setdefault("lal", {"PG": ["ball"]},)  # 在字典中取该值，如果有直接输出，如果没有赋新值
+nba_start.setdefault("cavs", {"PG": ["ball"]},)  # 如果有就直接输出该值
+print(nba_start)
+# ===========================================================================================
+# update 方法，将两个字典合并，如果有交叉的直接更新替换，如果没有，直接附在后面
+# item 方法，把字典转成列表
+#  dict.fromkeys()初始化一个字典
