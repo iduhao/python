@@ -2,6 +2,9 @@
 
 # dictionary（字典）是一种key-value的数据类型.无序，没有下标.通过key进行查找
 
+# ====================字典的方法======================================
+
+"""
 info = {
     'student001': "zhang san",
     'student002': "li si",
@@ -19,7 +22,9 @@ info["student004"] = "赵老爷"
 # del info["student004"]
 # info.pop("student003")  删除指定key的值
 print(info)
+"""
 #  ================字典嵌套=======================================
+'''
 nba_start = {
     "gsw": {
         "PG": ["Stephen Curry"],
@@ -55,4 +60,19 @@ print(nba_start)
 # ===========================================================================================
 # update 方法，将两个字典合并，如果有交叉的直接更新替换，如果没有，直接附在后面
 # item 方法，把字典转成列表
+print(nba_start.items())
 #  dict.fromkeys()初始化一个字典
+c = dict.fromkeys([1, 2, 3], "sex")
+print(c)
+'''
+# ============================循环字典======================================================
+info = dict.fromkeys(["curry", "kobe", "love"], "30")
+print(info)
+for i in info:
+    print(i, info[i])
+
+for k, v in info.items():
+    print(k, v)
+# 两种循环方法，第一种直接通过key值取value，比较高效，第二种方法需要先通过item()方法转成列表，然后再取值，转换列表需要消耗资源，效率低
+
+
