@@ -35,7 +35,7 @@ print(provinces)
 
 # 删除列表项
 provinces.remove("德国")  # remove 方法只能写名称，不能用索引
-#provinces.remove[3]
+# provinces.remove[3]
 print(provinces)
 del provinces[2]  # del 方法删除使用索引值，不能用名称
 # del provinces("江苏")
@@ -72,5 +72,5 @@ print(cba)
 for i in provinces:
     print(i)
 # 操作完成删除列表
-#del nba
-#print(nba)  # 报错，提示列表未定义
+# del nba
+# print(nba)  # 报错，提示列表未定义

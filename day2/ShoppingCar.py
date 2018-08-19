@@ -2,7 +2,7 @@
 
 # budget = int(input("Please input your budget:"))
 
-product_list= [
+product_list = [
     ('Iphone X', '8588'),
     ('MacbookPro', '14588'),
     ('Imac', '14788'),
